@@ -33,7 +33,6 @@ public class ConviteAdapter extends ArrayAdapter<Convite> {
             vi = inflater.inflate(R.layout.item, null);
         TextView text = (TextView) vi.findViewById(R.id.text);
         text.setText(getItem(position).getNumero());
-        Log.e(">>", getItem(position).getNumero()+": "+getItem(position).getSorteado());
         if (getItem(position).getSorteado()==1)
             text.setTextColor(Color.rgb(255, 0, 0));
         else
